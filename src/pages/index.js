@@ -35,17 +35,18 @@ export default class IndexPage extends React.Component {
         <h1>Halo</h1>
         <p>
           Terima kasih sebelumnya untuk meluangkan waktunya untuk mengisi
-          kuesioner ini
+          kuesioner ini. Hanya Test untuk branch baru.
         </p>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
           <Image />
         </div>
         <Container>
           <Form
-            name="kuesioner awal"
+            name="kuesioner-awal"
             method="post"
             data-netlify="true"
-            onSubmit="submit"
+            action="/"
+            onSubmit={handleSubmit}
             data-netlify-honeypot="bot-field"
           >
             <p hidden>
@@ -53,7 +54,7 @@ export default class IndexPage extends React.Component {
                 I love honeypot : <input name="bot-field" />
               </label>
             </p>
-            <input type="hidden" name="form-name" value="kuesioner awal" />
+            <input type="hidden" name="form-name" value="kuesioner-awal" />
             <Form.Group controlId="formBasicFullName">
               <Form.Label>Nama Lengkap</Form.Label>
               <Form.Control
