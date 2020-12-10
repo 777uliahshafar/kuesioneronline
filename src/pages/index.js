@@ -24,10 +24,6 @@ export default class IndexPage extends React.Component {
       [name]: value,
     });
   };
-  handleSubmit = (event) => {
-    event.preventDefault();
-    alert(`Terima kasih ${this.state.namaLengkap}!`);
-  };
   render() {
     return (
       <Layout>
@@ -45,7 +41,7 @@ export default class IndexPage extends React.Component {
             name="kuesioner-awal"
             method="post"
             data-netlify="true"
-            action="/"
+            action="/terima-kasih"
             onSubmit="submit"
             data-netlify-honeypot="bot-field"
           >
