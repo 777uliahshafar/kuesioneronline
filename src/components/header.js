@@ -1,8 +1,9 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-background-image'
+import './background-image.css'
 
-const Image = () => {
+const Header = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "header.jpg" }) {
@@ -20,10 +21,16 @@ const Image = () => {
   }
 
   return (
-    <Img fluid={data.placeholderImage.childImageSharp.fluid}>
-      <h2> Selamat Datang </h2>
+    <Img
+      className="forhead"
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      fadeIn
+    >
+      <div className="black-overlay">
+        <div className="content-box">Text Goes Here</div>
+      </div>
     </Img>
   )
 }
 
-export default Image
+export default Header
