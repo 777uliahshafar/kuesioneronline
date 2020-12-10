@@ -46,7 +46,7 @@ export default class IndexPage extends React.Component {
             method="post"
             data-netlify="true"
             action="/"
-            onSubmit={handleSubmit}
+            onSubmit="submit"
             data-netlify-honeypot="bot-field"
           >
             <p hidden>
