@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kuesioner Desain Perkotaan`,
+    description: `Kuesioner ini dilengkapi beragam macam pertanyaan baik pribadi maupun umum. Segala macam informasi terkait privasi yang dikirimkan akan digunakan untuk kepentingan studi dan ilmu pengetahuan dan akan dijaga sebaik mungkin untuk tidak disebarluaskan atau disalahgunakan. Cheers! `,
+    author: `@uliahshafar`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

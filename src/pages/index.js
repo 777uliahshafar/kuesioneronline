@@ -1,29 +1,27 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'gatsby';
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-import Layout from '../components/layout';
-import Image from '../components/image';
-import SEO from '../components/seo';
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import { Form, Button, Container } from 'react-bootstrap';
+import { Form, Button, Container } from 'react-bootstrap'
 
 export default class IndexPage extends React.Component {
   state = {
     namaLengkap: '',
     alamatEmail: '',
     nomorHp: '',
-  };
+  }
 
   handleInputChange = (event) => {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
+    const target = event.target
+    const value = target.value
+    const name = target.name
 
     this.setState({
       [name]: value,
-    });
-  };
+    })
+  }
   render() {
     return (
       <Layout>
@@ -31,11 +29,8 @@ export default class IndexPage extends React.Component {
         <h1>Halo</h1>
         <p>
           Terima kasih sebelumnya untuk meluangkan waktunya untuk mengisi
-          kuesioner ini. Hanya Test untuk branch baru.
+          kuesioner ini.
         </p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image />
-        </div>
         <Container>
           <Form
             name="kuesioner-awal"
@@ -86,9 +81,7 @@ export default class IndexPage extends React.Component {
             </Button>
           </Form>
         </Container>
-        <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
       </Layout>
-    );
+    )
   }
 }
